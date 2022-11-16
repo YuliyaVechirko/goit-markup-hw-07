@@ -1,12 +1,11 @@
 .page-header {
-    background-color: var(--primary-white-color);
-&__logo-header {
-    color: var(--accent-color);
-    }
+    background-color: $primary-white-color;
+
 &__site-nav {
     display: flex;
     margin-left: 93px;
     }
+
 &__item {
     display:block;
     padding-top: 32px;
@@ -18,11 +17,17 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     }
+
 &__link {
-    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
 &__link--current::after {
     display: inline-block;
     content:"";
@@ -32,26 +37,29 @@
     position: absolute;
     left: 0;
     top: 76px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border-radius: 2px;
     }
+
 &__site-nav &__item:not(:last-child) {
         margin-right:50px;
     }    
 &__link:hover,
 &__link:focus {
-color: var(--accent-color);
+color: $accent-color;
 }
+
 &__item:not( :last-child) {
     margin-right:50px;
 }
+
 &__address-link {
     display: flex;
     align-items: center;
 
     text-decoration: none;
-    color: var(--primary-text-color);
-    fill: var(--primary-text-color);
+    color: $primary-text-color;
+    fill: $primary-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -60,11 +68,13 @@ color: var(--accent-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 &__item :hover,
 &__item :focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    color: $accent-color;
+    fill: $accent-color;
 }
+
 &__icon-mail {
     display: flex;
     align-items: center;
@@ -73,9 +83,10 @@ color: var(--accent-color);
     
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 &__icon-mail :hover,
 &__icon-mail :focus {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 &__icon-tel {
@@ -86,11 +97,14 @@ color: var(--accent-color);
         
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 &__icon-tel :hover,
 &__icon-tel :focus {
-fill: var(--accent-color);
+fill: $accent-color;
 }
 } 
+
+
 
 .address {
     display:flex;

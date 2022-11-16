@@ -1,27 +1,29 @@
 .section-clients {
     padding-top: 94px;
     padding-bottom: 94px; 
-    }
     
-    .title-clients {
+    
+&__title-clients {
     margin-top: 0;
     margin-bottom: 50px;
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
     }
-    
-    .clients-list {
+}
+
+.clients-list {
     display: flex;
     align-items: center;
     justify-content: center;  
     }
-    
-    
-    .clients-img {
+
+.clients-item {
+
+&__clients-img {
     display: flex;
     width: 170px;
     height: 92px;
@@ -31,16 +33,13 @@
     fill: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
-    
-    .clients-item  .clients-img:hover,
-    .clients-item  .clients-img:focus {
-     fill: var(--accent-color);
-     border: 1px solid var(--accent-color);
-     
-    }
-    
+}
+.clients-item  .clients-item__clients-img:hover,
+.clients-item  .clients-item__clients-img:focus {
+     fill: $accent-color;
+     border: 1px solid $accent-color;
+}
+
