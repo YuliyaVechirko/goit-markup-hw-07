@@ -19,9 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;  
-    }
 
-.clients-item {
 
 &__clients-img {
     display: flex;
@@ -36,10 +34,9 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-}
-.clients-item  .clients-item__clients-img:hover,
-.clients-item  .clients-item__clients-img:focus {
+&  &__clients-img:hover,
+&  &__clients-img:focus {
      fill: $accent-color;
      border: 1px solid $accent-color;
 }
-
+}

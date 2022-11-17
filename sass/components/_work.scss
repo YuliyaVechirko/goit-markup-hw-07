@@ -18,11 +18,11 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    }
      
-    .work-box {
+    &__work-box {
     width: 370px;
     margin-right: 30px;
+    }
  
     &__box:not(:last-child) {
     margin-right: 30px;
