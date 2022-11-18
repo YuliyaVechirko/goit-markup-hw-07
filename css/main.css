@@ -167,7 +167,7 @@ img {
 }
 .features__features-item {
   width: 270px;
-  margin-right: 30px;
+  margin-right: 0;
   margin-left: 0;
 }
 .features__icon-img {
@@ -183,7 +183,7 @@ img {
   width: 270px;
   height: 120px;
   background-color: #F5F4FA;
-  margin-right: 30px;
+  margin-right: 0;
   margin-bottom: 30px;
   border-radius: 4px;
 }
